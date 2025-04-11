@@ -5,36 +5,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über mich - Sonja</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
     <header>
-        <h1>Hi, ich bin Sonja!</h1>
-        <p>Willkommen auf meiner kleinen Webseite!</p>
+        <nav class="navbar">
+          <div class="navbar-container">
+            <a href="#" class="logo">Sonja<span class="highlight">.</span></a>
+            <button class="menu-toggle" id="menuToggle">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Über mich</a></li>
+              <li><a href="#projekte">Projekte</a></li>
+              <li><a href="#interessen">Interessen</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </div>
+        </nav>
     </header>
-
-    <section class="about">
-        <img src="profilbild.jpg" alt="Mein Profilbild">
-        <h2>Über mich</h2>
-        <p>Ich bin kreativ, offen und liebe es, Neues zu lernen. In meiner Freizeit interessiere ich mich für Design, Technik und Reisen.</p>
+      
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, ich bin <span class="highlight">Sonja</span>!</h1>
+            <p class="subtitle">Willkommen auf meiner kleinen bunten Welt im Internet ✨</p>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
     </section>
 
-    <section class="interessen">
-        <h2>Meine Interessen</h2>
-        <ul>
-            <li>Webdesign & Coding</li>
-            <li>Social Media</li>
-            <li>Fotografie</li>
-            <li>Reisen & Abenteuer</li>
-        </ul>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/sonja.jpeg" alt="Mein Profilbild">
+                </div>
+                <div class="about-text">
+                    <h2>Wer bin ich?</h2>
+                    <p>Ich bin Sonja — kreativ, offen, ehrlich und immer neugierig auf Neues!</p>
+                    <p>In meiner Freizeit findest du mich irgendwo zwischen Laptop, Kamera und Koffer.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <button onclick="zeigeNachricht()">Schreib mir!</button>
+    <section class="projekte" id="projekte">
+        <div class="container">
+            <h2>Meine <span class="highlight">Projekte</span></h2>
+            <div class="projekt-tabs">
+                <button class="tab-btn active" data-tab="alle">Alle</button>
+                <button class="tab-btn" data-tab="webdesign">Webdesign</button>
+                <button class="tab-btn" data-tab="fotografie">Fotografie</button>
+                <button class="tab-btn" data-tab="spiele">Spiele</button>
+            </div>
+            
+            <div class="projekt-container">
+                <!-- Webdesign Projekte -->
+                <div class="projekt-item" data-category="webdesign">
+                    <div class="projekt-image">
+                        <img src="/api/placeholder/600/400" alt="Portfolio Website">
+                        <div class="projekt-overlay">
+                            <a href="#" class="projekt-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="projekt-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Responsives Design mit modernem Layout</p>
+                        <div class="projekt-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projekt-item" data-category="webdesign">
+                    <div class="projekt-image">
+                        <img src="/api/placeholder/600/400" alt="E-Commerce Shop">
+                        <div class="projekt-overlay">
+                            <a href="#" class="projekt-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="projekt-info">
+                        <h3>Online Shop</h3>
+                        <p>E-Commerce Plattform mit Warenkorb-Funktion</p>
+                        <div class="projekt-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fotografie Projekte -->
+                <div class="projekt-item" data-category="fotografie">
+                    <div class="projekt-image">
+                        <img src="/api/placeholder/600/400" alt="Naturfotografie">
+                        <div class="projekt-overlay">
+                            <a href="#" class="projekt-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="projekt-info">
+                        <h3>Naturfotografie</h3>
+                        <p>Serie von Landschaftsaufnahmen im Gebirge</p>
+                        <div class="projekt-tags">
+                            <span>Landscape</span>
+                            <span>Natur</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projekt-item" data-category="fotografie">
+                    <div class="projekt-image">
+                        <img src="/api/placeholder/600/400" alt="Porträtfotografie">
+                        <div class="projekt-overlay">
+                            <a href="#" class="projekt-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="projekt-info">
+                        <h3>Porträtserie</h3>
+                        <p>Ausdrucksstarke Porträts in urbaner Umgebung</p>
+                        <div class="projekt-tags">
+                            <span>Portrait</span>
+                            <span>Urban</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spiele Projekte -->
+                <div class="projekt-item" data-category="spiele">
+                    <div class="projekt-image">
+                        <img src="/api/placeholder/600/400" alt="Memory Spiel">
+                        <div class="projekt-overlay">
+                            <a href="#memory-game" class="projekt-link play-game"><i class="fas fa-gamepad"></i> Spielen</a>
+                        </div>
+                    </div>
+                    <div class="projekt-info">
+                        <h3>Memory-Spiel</h3>
+                        <p>Ein interaktives Memory-Spiel mit bunten Karten</p>
+                        <div class="projekt-tags">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projekt-item" data-category="spiele">
+                    <div class="projekt-image">
+                        <img src="/api/placeholder/600/400" alt="Quiz App">
+                        <div class="projekt-overlay">
+                            <a href="#" class="projekt-link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="projekt-info">
+                        <h3>Wissens-Quiz</h3>
+                        <p>Interaktives Quiz zu verschiedenen Themen</p>
+                        <div class="projekt-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Memory Game Modal -->
+    <div id="memory-game-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Memory <span class="highlight">Spiel</span></h2>
+            
+            <div class="game-stats">
+                <div class="stat">
+                    <span id="moves">0</span> Züge
+                </div>
+                <div class="stat">
+                    <span id="timer">0</span> Sekunden
+                </div>
+                <button id="restart-game" class="game-btn">Neu starten</button>
+            </div>
+            
+            <div id="memory-game" class="memory-game-container">
+                <!-- Memory Cards werden durch JavaScript generiert -->
+            </div>
+        </div>
+    </div>
+
+    <section class="interessen" id="interessen">
+        <div class="container">
+            <h2>Was ich <span class="highlight">liebe</span> 💖</h2>
+            <div class="interest-cards">
+                <div class="interest-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Webdesign & Coding</h3>
+                    <p>Ich liebe es, kreative Websites zu gestalten und neue Technologien zu entdecken.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-hashtag"></i>
+                    <h3>Social Media</h3>
+                    <p>Digitale Kommunikation und Content Creation begeistern mich jeden Tag aufs Neue.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Fotografie</h3>
+                    <p>Die Welt durch die Linse zu entdecken und besondere Momente festzuhalten ist meine Leidenschaft.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Reisen & Abenteuer</h3>
+                    <p>Neue Orte erkunden und verschiedene Kulturen kennenlernen erweitert meinen Horizont.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Musik</h3>
+                    <p>Musik ist mein täglicher Begleiter und gibt mir Inspiration für kreative Projekte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="kontakt" id="kontakt">
+        <div class="container">
+            <h2>Schreib mir <span class="highlight">gern</span>!</h2>
+            <form action="https://formspree.io/f/your-code-here" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Dein Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Deine E-Mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Deine Nachricht an mich..." required></textarea>
+                </div>
+                <button type="submit">Nachricht senden <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Sonja Ploch</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>Made with <i class="fas fa-heart"></i> by Sonja Ploch | &copy; 2025</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
