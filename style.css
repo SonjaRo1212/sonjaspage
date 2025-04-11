@@ -619,6 +619,22 @@ footer {
     color: var(--light-color);
     padding: 30px 0;
 }
+.about-image img,
+.projekt-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* optional: für runde Ecken */
+}
+
+.projekt-image {
+    overflow: hidden;
+}
+
+.about-image {
+    max-width: 300px; /* Profilbild begrenzen */
+    margin: 0 auto; /* Bild zentrieren */
+}
 
 .footer-content {
     display: flex;
