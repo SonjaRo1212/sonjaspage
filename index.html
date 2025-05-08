@@ -22,6 +22,7 @@
             <ul class="nav-links" id="navLinks">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">Über mich</a></li>
+              <li><a href="#skills">Skills</a></li>
               <li><a href="#projekte">Projekte</a></li>
               <li><a href="#interessen">Interessen</a></li>
               <li><a href="#kontakt">Kontakt</a></li>
@@ -48,12 +49,42 @@
                 </div>
                 <div class="about-text">
                     <h2>Wer bin ich?</h2>
-                    <p>Ich bin Sonja — kreativ, offen, ehrlich und immer neugierig auf Neues!</p>
-                    <p>In meiner Freizeit findest du mich irgendwo zwischen Laptop, Kamera und Koffer.</p>
+                    <p>Ich bin Sonja, 29 Jahre alt, und lebe in der Marketing-Bubble.</p>
+                    <p>Seit Jahren bin ich im kreativen Bereich tätig, habe verschiedene Disziplinen durchlaufen und meine Leidenschaft im Online Marketing gefunden.</p>
+                    <p>Von 2019 bis 2022 habe ich eine Ausbildung zur Mediengestalterin Digital/Print absolviert. Obwohl ich den Print-Bereich solide beherrsche, sehe ich mich am liebsten im digitalen Bereich.</p>
+                    <p>Mein Herz schlägt für Webseiten, die digitale Welt, Social Media, das Texten und Performance Marketing.</p>
                     <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/sonja.ploch" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sonjaploch" class="social-icon"><i class="fab fa-linkedin"></i></a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Meine <span class="highlight">Skills</span></h2>
+            <div class="interest-cards">
+                <div class="interest-card">
+                    <i class="fas fa-pen-nib"></i>
+                    <h3>Text & Content</h3>
+                    <p>Texte für Websites, Social Media & Kampagnen mit Fingerspitzengefühl und Strategie.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design & Ästhetik</h3>
+                    <p>Gestaltung mit Fokus auf User Experience & visuelle Konsistenz.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Performance Marketing</h3>
+                    <p>Paid Ads, Funnel-Denken und datenbasierte Optimierung mit Herz & Verstand.</p>
+                </div>
+                <div class="interest-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Digital & Technik</h3>
+                    <p>CMS, SEO, Basics in HTML/CSS und digitale Tools sind mein Zuhause.</p>
                 </div>
             </div>
         </div>
@@ -69,10 +100,8 @@
             </div>
             
             <div class="projekt-container">
-                <!-- Webdesign Projekte -->
                 <div class="projekt-item" data-category="webdesign">
                     <div class="projekt-image"><img src="images/arbeitsprobe.png" alt="Mein Projekt">
-                        
                         <div class="projekt-overlay">
                             <a href="https://xn--flaschenstnder-by-gko-f2b.de/" class="projekt-link"><i class="fas fa-link"></i></a>
                         </div>
@@ -87,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Spiele Projekte -->
+
                 <div class="projekt-item" data-category="spiele">
                     <div class="projekt-image">
                         <img src="images/arbeitsprobe.png" alt="Mein Projekt">
@@ -108,13 +137,12 @@
                 
                 <div class="projekt-item" data-category="spiele">
                     <div class="projekt-image"><img src="images/spiel.png" alt="Mein Projekt">
-                
                         <div class="projekt-overlay">
                             <a href="https://sonjaro1212.github.io/sonjaspage/" class="projekt-link" target="_blank"><i class="fas fa-gamepad"></i> Spielen</a>
                         </div>
                     </div>
                     <div class="projekt-info">
-                    <h3>Mein eigenes Spiel</h3>
+                        <h3>Mein eigenes Spiel</h3>
                         <p>Ein selbstentwickeltes interaktives Browser-Spiel</p>
                         <div class="projekt-tags">
                             <span>JavaScript</span>
@@ -127,12 +155,10 @@
         </div>
     </section>
     
-    <!-- Memory Game Modal -->
     <div id="memory-game-modal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h2>Memory <span class="highlight">Spiel</span></h2>
-            
             <div class="game-stats">
                 <div class="stat">
                     <span id="moves">0</span> Züge
@@ -142,9 +168,8 @@
                 </div>
                 <button id="restart-game" class="game-btn">Neu starten</button>
             </div>
-            
             <div id="memory-game" class="memory-game-container">
-                <!-- Memory Cards werden durch JavaScript generiert -->
+                <!-- Karten kommen per JavaScript -->
             </div>
         </div>
     </div>
@@ -186,31 +211,4 @@
         <div class="container">
             <h2>Schreib mir <span class="highlight">gern</span>!</h2>
             <form action="https://formspree.io/f/your-code-here" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Dein Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Deine E-Mail" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Deine Nachricht an mich..." required></textarea>
-                </div>
-                <button type="submit">Nachricht senden <i class="fas fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>Made with <i class="fas fa-heart"></i> by Sonja Ploch | &copy; 2025</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                <div class="form-group"
