@@ -95,7 +95,9 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 40px; /* Erhöht den Abstand links/rechts */
 }
+
 
 .logo {
     padding: 0 20px;
