@@ -46,8 +46,8 @@
         <div class="about-text">
           <h2>Wer bin ich?</h2>
           <p>Ich bin Sonja, 29 Jahre alt, lebe in der Marketing-Bubble.</p>
-          <p>Seit Jahren bin ich im kreativen Bereich tätig, habe verschiedene Disziplinen durchlaufen und meine Leidenschaft im Online Marketing gefunden.</p>
-          <p>Mein Herz schlägt für Webseiten, die digitale Welt, Social Media, das Texten und Performance Marketing.</p>
+          <p>Seit Jahren bin ich im kreativen Bereich tätig und liebe Online Marketing.</p>
+          <p>Ich arbeite gern mit Webseiten, Social Media, Texten und Performance Marketing.</p>
           <div class="social-links">
             <a href="https://www.instagram.com/sonja.ploch" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/sonjaploch" class="social-icon"><i class="fab fa-linkedin"></i></a>
@@ -57,7 +57,122 @@
     </div>
   </section>
 
-  <!-- Füge hier deine Skills-, Projekte-, Interessen- und Kontaktbereiche analog dem alten Code wieder ein -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Meine <span class="highlight">Skills</span></h2>
+      <div class="interest-cards">
+        <div class="interest-card"><i class="fas fa-pen-nib"></i><h3>Text & Content</h3><p>Texte mit Strategie und Stil.</p></div>
+        <div class="interest-card"><i class="fas fa-paint-brush"></i><h3>Design & UX</h3><p>Visuelle Gestaltung mit Gefühl.</p></div>
+        <div class="interest-card"><i class="fas fa-chart-line"></i><h3>Performance Marketing</h3><p>Daten, Funnel & Ads mit Herz.</p></div>
+        <div class="interest-card"><i class="fas fa-code"></i><h3>Digital & Technik</h3><p>CMS, SEO und HTML/CSS.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projekte" id="projekte">
+    <div class="container">
+      <h2>Meine <span class="highlight">Projekte</span></h2>
+      <div class="projekt-tabs">
+        <button class="tab-btn active" data-tab="alle">Alle</button>
+        <button class="tab-btn" data-tab="webdesign">Arbeitsproben</button>
+        <button class="tab-btn" data-tab="spiele">Spiele</button>
+      </div>
+
+      <div class="projekt-container">
+        <div class="projekt-item" data-category="webdesign">
+          <div class="projekt-image"><img src="images/arbeitsprobe.png" alt="Arbeitsprobe" />
+            <div class="projekt-overlay">
+              <a href="https://xn--flaschenstnder-by-gko-f2b.de/" class="projekt-link"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+          <div class="projekt-info">
+            <h3>Arbeitsprobe Webseite</h3>
+            <p>Responsives Design mit modernem Layout</p>
+            <div class="projekt-tags">
+              <span>CMS</span><span>SEO</span><span>Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projekt-item" data-category="spiele">
+          <div class="projekt-image"><img src="images/arbeitsprobe.png" alt="Memory" />
+            <div class="projekt-overlay">
+              <a href="#memory-game" class="projekt-link play-game"><i class="fas fa-gamepad"></i> Spielen</a>
+            </div>
+          </div>
+          <div class="projekt-info">
+            <h3>Memory-Spiel</h3>
+            <p>Interaktives Memory mit bunten Karten</p>
+            <div class="projekt-tags">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projekt-item" data-category="spiele">
+          <div class="projekt-image"><img src="images/spiel.png" alt="Spiel" />
+            <div class="projekt-overlay">
+              <a href="https://sonjaro1212.github.io/sonjaspage/" target="_blank" class="projekt-link"><i class="fas fa-gamepad"></i> Spielen</a>
+            </div>
+          </div>
+          <div class="projekt-info">
+            <h3>Eigenes Browser-Spiel</h3>
+            <p>Spiel mit Steuerung per Tastatur</p>
+            <div class="projekt-tags">
+              <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMORY GAME MODAL -->
+  <div id="memory-game-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Memory <span class="highlight">Spiel</span></h2>
+      <div class="game-stats">
+        <div class="stat"><span id="moves">0</span> Züge</div>
+        <div class="stat"><span id="timer">0</span> Sekunden</div>
+        <button id="restart-game" class="game-btn">Neu starten</button>
+      </div>
+      <div id="memory-game" class="memory-game-container">
+        <!-- Karten kommen per JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <section class="interessen" id="interessen">
+    <div class="container">
+      <h2>Was ich <span class="highlight">liebe</span> 💖</h2>
+      <div class="interest-cards">
+        <div class="interest-card"><i class="fas fa-code"></i><h3>Webdesign</h3><p>Kreative Layouts und Logik.</p></div>
+        <div class="interest-card"><i class="fas fa-hashtag"></i><h3>Social Media</h3><p>Content Creation & Kommunikation.</p></div>
+        <div class="interest-card"><i class="fas fa-camera"></i><h3>Fotografie</h3><p>Momente kreativ festhalten.</p></div>
+        <div class="interest-card"><i class="fas fa-plane"></i><h3>Reisen</h3><p>Neue Orte, neue Inspiration.</p></div>
+        <div class="interest-card"><i class="fas fa-music"></i><h3>Musik</h3><p>Kreativer Treibstoff für mich.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kontakt" id="kontakt">
+    <div class="container">
+      <h2>Schreib mir <span class="highlight">gern</span>!</h2>
+      <form action="https://formspree.io/f/your-code-here" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Dein Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Deine E-Mail" required />
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Deine Nachricht an mich..." required></textarea>
+        </div>
+        <button type="submit">Nachricht senden <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
@@ -73,8 +188,6 @@
 
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
