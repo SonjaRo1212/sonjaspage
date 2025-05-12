@@ -101,6 +101,44 @@ p {
   text-decoration: none;
   transition: var(--transition);
 }
+/* === INTERESSEN === */
+.interest-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 0; /* Kein Abstand mehr über den Karten! */
+}
+
+.interest-card {
+  background: var(--light-color);
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.interest-card:hover {
+  transform: translateY(-5px);
+}
+
+.interest-card i {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.interest-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.interest-card p {
+  font-size: 16px;
+  color: var(--text-color);
+}
 
 .logo:hover {
   color: var(--primary-color);
@@ -173,7 +211,7 @@ p {
 
 .scroll-down {
   position: absolute;
-  bottom: 30px;
+  bottom 20px;
   left: 50%;
   transform: translateX(-50%);
   color: var(--dark-color);
