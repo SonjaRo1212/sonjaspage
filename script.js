@@ -126,3 +126,17 @@ window.addEventListener('click', (e) => {
     clearInterval(interval);
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.getElementById("cookie-banner");
+  const accept = document.getElementById("cookie-accept");
+
+  if (!localStorage.getItem("cookieAccepted")) {
+    banner.style.display = "flex";
+  }
+
+  accept.addEventListener("click", function () {
+    localStorage.setItem("cookieAccepted", "true");
+    banner.style.display = "none";
+  });
+});
+
