@@ -257,13 +257,14 @@ p {
 
 .scroll-down {
   position: absolute;
-  bottom: 20px;
+  bottom: 60px; /* vorher 20px */
   left: 50%;
   transform: translateX(-50%);
   color: var(--dark-color);
   font-size: 1.5rem;
   animation: bounce 2s infinite;
 }
+
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }

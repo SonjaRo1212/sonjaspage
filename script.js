@@ -1,18 +1,12 @@
 // === Responsive Menü Toggle ===
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
-
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
 // === Memory Game ===
-const cardsArray = [
-  '🍓', '🍓', '🌈', '🌈',
-  '💎', '💎', '🌸', '🌸',
-  '🚀', '🚀', '🎨', '🎨'
-];
-
+const cardsArray = ['🍓','🍓','🌈','🌈','💎','💎','🌸','🌸','🚀','🚀','🎨','🎨'];
 let memoryGameContainer = document.getElementById('memory-game');
 let movesCounter = document.getElementById('moves');
 let timerDisplay = document.getElementById('timer');
@@ -58,21 +52,16 @@ function startGame() {
 
 function flipCard() {
   if (lockBoard || this === firstCard) return;
-
   this.classList.add('flip');
-
   if (!firstCard) {
     firstCard = this;
     return;
   }
-
   secondCard = this;
   moves++;
   movesCounter.textContent = moves;
-
   const firstIcon = firstCard.querySelector('.card-front').textContent;
   const secondIcon = secondCard.querySelector('.card-front').textContent;
-
   if (firstIcon === secondIcon) {
     disableCards();
   } else {
@@ -126,17 +115,19 @@ window.addEventListener('click', (e) => {
     clearInterval(interval);
   }
 });
+
+// === Cookie-Banner ===
 document.addEventListener("DOMContentLoaded", function () {
   const banner = document.getElementById("cookie-banner");
   const accept = document.getElementById("cookie-accept");
-
+  if (!banner || !accept) return;
   if (!localStorage.getItem("cookieAccepted")) {
     banner.style.display = "flex";
+  } else {
+    banner.style.display = "none";
   }
-
   accept.addEventListener("click", function () {
     localStorage.setItem("cookieAccepted", "true");
     banner.style.display = "none";
   });
 });
-
