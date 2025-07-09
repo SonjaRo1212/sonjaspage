@@ -204,6 +204,52 @@ p {
   padding: 0 20px;
 }
 
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  background-color: #ffffff;
+  color: #333;
+  padding: 16px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.cookie-banner p {
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+.cookie-banner a {
+  color: #9966cc;
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background-color: #9966cc;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 16px;
+  flex-shrink: 0;
+}
+
+.cookie-banner button:hover {
+  background-color: #7c4dac;
+}
+
+
 .subtitle {
   font-size: 1.2rem;
   margin-bottom: 30px;
@@ -211,7 +257,7 @@ p {
 
 .scroll-down {
   position: absolute;
-  bottom 20px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   color: var(--dark-color);
@@ -584,5 +630,3 @@ footer .fa-heart {
   color: var(--primary-color);
 }
 
-/* === RESPONSIVE === */
-@media (max-width:
